@@ -1,3 +1,55 @@
+# Introduction
+
+Hello, this is my test React App to demonstrate my knowledge and skills.\
+Before one can begin to review this project, it's important to have the right dependencies implemented.\
+If you have not worked with the React App before, please refer below to "Getting Started with Create React App" for more information.
+
+## Dependencies
+
+There are a few extra dependencies to implement before one can operate the application.\
+Fortunately, there are only a few lines of command inputs to set this up.
+
+`npm i bootstrap@5.3.2`\
+`npm i react-router-dom`\
+`npm i react-hook-form`
+
+While not functional at this point, this will be later implemented and can be put in to future proof.
+
+`npm i jsonwebtoken`\
+`npm i dotenv`
+
+## Showcase
+
+### Header And Footer
+
+Implemented a header and footer for all pages.
+
+### Navigation Links
+
+This is a demonstration into how to set up navigation on an application, and how to implement nested navigation within navigated links.
+
+### Register and Login
+
+A basic implementation to create an account, set an email and password, then to successfully sign in with the new account.\
+Later implmentations will work incorporate security to protect passwords and accounts.
+
+### Buttons
+
+Implemented alert buttons, as well as functions to have counters, both synchronised and independently operated.
+
+### Tables
+#### Elvish Age Table
+
+This is a table that showcases the aging rate of Tolkien's elves from his Legendarium.\
+This table presents the workings of these ages as generated rows, each entering the appropriate values based on their lifecycle, as well as the different iterations by Tolkien.
+Plan to implement options for the table to be interactive, how many rows / what age an elf is at X, etc.
+
+### Games
+#### Tic-Tac-Toe
+
+Basic implementation of Tic-Tac-toe, from this [Tic-Tac-Toe Tutorial](https://react.dev/learn/tutorial-tic-tac-toe) from React.
+Intend to improve presentations with bootstrap.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
