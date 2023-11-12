@@ -36,7 +36,7 @@ function CalcAgeSixtyFive(index) {
     if (index <= 24) {
         return index * 3;
     } else {
-        return (index - 24) * 144 + (3 * 24);
+        return (index - 24) * 144 + 72;
     }
 }
 
@@ -128,11 +128,11 @@ export default class ElvishAges extends Component {
                             <th colSpan={4}>4th</th>
                         </tr>
                         <tr>
-                            <th colSpan={2}>Age, Reckoning</th>
+                            <th colSpan={2}>Reckoning</th>
                             <th>Years</th>
-                            <th colSpan={2}>Age, Reckoning</th>
+                            <th colSpan={2}>Reckoning</th>
                             <th>Years</th>
-                            <th colSpan={2}>Age, Reckoning</th>
+                            <th colSpan={2}>Reckoning</th>
                             <th>Years</th>
                             <th colSpan={2}>Early</th>
                             <th colSpan={2}>Later</th>
@@ -165,12 +165,12 @@ export default class ElvishAges extends Component {
                             <td>The period of adulthood, (<i>Coimen</i>, pl. <i>Coimendi</i>).</td>
                         </tr>
                         <tr>
-                            <td>y</td>
+                            <td>Y</td>
                             <td><i>Yén</i> (pl. <i>Yéni</i>)</td>
                             <td>An Elvish long year of 144 solar years.</td>
                         </tr>
                         <tr>
-                            <td>l</td>
+                            <td>L</td>
                             <td><i>Löa</i> (pl. <i>Löar</i>)</td>
                             <td>An Elvish solar year.</td>
                         </tr>

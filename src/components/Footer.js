@@ -5,7 +5,8 @@ export default class Footer extends Component {
         return (
             <div>
                 <hr />
-                <p class="footer">Footer text</p>
+                <h2>Footer</h2>
+                <p class="footer">This React application was developed by Matthew Germon.</p>
             </div>
         )
     }

@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Home from './Home';
 import Contact from './Contact';
-import NestOne from './NestOne';
-import NestTwo from './NestTwo';
+import NestOne from './nestedlinks/NestOne';
+import NestTwo from './nestedlinks/NestTwo';
+import NestThree from './nestedlinks/NestThree';
 import ButtonOne from './buttons/ButtonOne';
 import ButtonTwo from './buttons/ButtonTwo';
 import ButtonThree from './buttons/ButtonThree';
@@ -12,6 +13,22 @@ import TicTacToe from './games/TicTacToe';
 import ElvishAges from './tablelists/ElvishAges';
 import Registration from './Registration';
 import Login from './Login';
+
+function NestedNest() {
+    document.title = "Nested Nests";
+    return (
+        <div>
+            <h1>Nested Nest!</h1>
+            <p>A nested navigation within a nested navigation!</p>
+            <p>
+                | <Link to="NestThree">Nest 3</Link> |
+            </p>
+            <Routes>
+                <Route path="NestThree" element={<NestThree />} />
+            </Routes>
+        </div>
+    );
+}
 
 function NestedNavLink() {
     document.title = "Nexted Navigation";
@@ -21,11 +38,13 @@ function NestedNavLink() {
             <p>A nested navigation within a navigation link.</p>
             <p>
                 | <Link to="NestOne">Nest 1</Link> |&nbsp;
-                <Link to="NestTwo">Nest 2</Link> |
+                <Link to="NestTwo">Nest 2</Link> |&nbsp;
+                <Link to="NestedNest">Nested Nest</Link> |
             </p>
             <Routes>
                 <Route path="NestOne" element={<NestOne />} />
                 <Route path="NestTwo" element={<NestTwo />} />
+                <Route path="NestedNest/*" element={<NestedNest />} />
             </Routes>
         </div>
     );
