@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Home from './Home';
+import Shop from './Shop';
 import Contact from './Contact';
 import NestOne from './nestedlinks/NestOne';
 import NestTwo from './nestedlinks/NestTwo';
@@ -13,6 +14,7 @@ import TicTacToe from './games/TicTacToe';
 import ElvishAges from './tablelists/ElvishAges';
 import Registration from './Registration';
 import Login from './Login';
+import DatePage from './DatePage';
 
 function NestedNest() {
     document.title = "Nested Nests";
@@ -110,6 +112,8 @@ export default class NavLink extends Component {
                         | <Link to={'/'}>Home</Link> |&nbsp;
                         <Link to={'/Login'}>Login</Link> |&nbsp;
                         <Link to={'/Register'}>Sign Up</Link> |&nbsp;
+                        <Link to={'/Shop'}>Shop</Link> |&nbsp;
+                        <Link to={'/DatePage'}>Dates</Link> |&nbsp;
                         <Link to={'/Contact'}>Contact</Link> |&nbsp;
                         <Link to={'/Nested'}>Nested Links</Link> |&nbsp;
                         <Link to={'/Buttons'}>Buttons</Link> |&nbsp;
@@ -120,6 +124,8 @@ export default class NavLink extends Component {
                         <Route path="/" element={<Home />} />
                         <Route path="/Login" element={<Login />} />
                         <Route path="/Register" element={<Registration />} />
+                        <Route path="/Shop" element={<Shop />} />
+                        <Route path="/DatePage" element={<DatePage />}></Route>
                         <Route path="/Contact" element={<Contact />} />
                         <Route path="/Nested/*" element={<NestedNavLink />} />
                         <Route path="/Buttons/*" element={<NestedButtons />} />
